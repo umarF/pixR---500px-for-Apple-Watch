@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GeX-C3-9mL">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeueExtras.ttc">
+            <string>HelveticaNeue-CondensedBold</string>
+            <string>HelveticaNeue-CondensedBold</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ndg-ya-cNv">
+                                <rect key="frame" x="20" y="72" width="560" height="29"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="WUQ-do-7Z6"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="About"/>
+                                    <segment title="Terms"/>
+                                    <segment title="Help"/>
+                                </segments>
+                                <color key="tintColor" red="0.0" green="0.83536537249999998" blue="0.00025572521679999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="segmentControllerAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="1Os-GW-VKr"/>
+                                </connections>
+                            </segmentedControl>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wW1-IK-sgi">
+                                <rect key="frame" x="20" y="305" width="560" height="275"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Acceptance Of Terms
+
+The web pages available at 500px.com and all linked pages (“Site”), are owned and operated by 500px, Inc. (“500px”) a Canadian corporation and is accessed by you under the Terms of Use described below (“Terms”).
+
+Please read these terms carefully before using the services. By accessing the site, viewing any content or using any services available on the site (as each is defined below) you are agreeing to be bound by these terms, which together with our Privacy policy, governs our relationship with you in relation to the site. If you disagree with any part of the terms then you may not access the site.
+
+Basically,
+By using 500px you agree to all the terms below.
+
+Description Of Service
+
+The Site is an online community which enables photographers and graphic artists to post photographs and images, share comments, opinions and ideas, promote their work, participate in contests and promotions, and access and/or purchase services from time to time made available on the Site (“Services”). Services include, but are not limited to, any service and/or content 500px makes available to or performs for you, as well as the offering of any materials displayed, transmitted or performed on the Site or through the Services. Content (“Content”) includes, but is not limited to text, user comments, messages, information, data, graphics, news articles, photographs, images, illustrations, and software.
+
+Your access to and use of the Site may be interrupted from time to time as a result of equipment malfunction, updating, maintenance or repair of the Site or any other reason within or outside the control of 500px. 500px reserves the right to suspend or discontinue the availability of the Site and/or any Service and/or remove any Content at any time at its sole discretion and without prior notice. 500px may also impose limits on certain features and Services or restrict your access to parts of or all of the Site and the Services without notice or liability. The Site should not be used or relied upon for storage of your photographs and images and you are directed to retain your own copies of all Content posted on the Site.
+
+Basically,
+We develop a photo community and provide services to create online portfolios and we will develop more features and services in the future. At times things can go wrong and the service may be interrupted. Unlikely, but sometimes things can go really wrong.
+
+Registration
+
+As a condition to using Services, you are required to open an account with 500px and select a password and username, and to provide registration information. The registration information you provide must be accurate, complete, and current at all times. Failure to do so constitutes a breach of the Terms, which may result in immediate termination of your 500px account.
+
+You may not use as a username the name of another person or entity or that is not lawfully available for use, a name or trade mark that is subject to any rights of another person or entity other than you without appropriate authorization, or a name that is otherwise offensive, vulgar or obscene.
+
+You are responsible for maintaining the confidentiality of your password and are solely responsible for all activities resulting from the use of your password and conducted through your 500px account.
+
+Services are available only to individuals who are either (i) at least 18 years old, or (ii) at least 14 years old, and who are authorized to access the Site by a parent or legal guardian. If you have authorized a minor to use the Site, you are responsible for the online conduct of such minor, and the consequences of any misuse of the Site by the minor. Parents and legal guardians are warned that the Site does display photographs and images containing nudity and violence that may be offensive to some.
+
+The Services are for use by individuals who are photographers and graphic artists. Accounts may not be opened by galleries, agents and other market intermediaries and entities who represent photographers and graphic artists or sell their works. If you do not qualify for registration you are not permitted to open an account or use the Services.
+
+Basically,
+To fully use the services you need to create your own account, without violating other peoples' rights.
+
+User Conduct
+
+All Content posted or otherwise submitted to the Site is the sole responsibility of the account holder from which such Content originates and you acknowledge and agree that you, and not 500px are entirely responsible for all Content that you post, or otherwise submit to the Site. 500px does not control user submitted Content and, as such, does not guarantee the accuracy, integrity or quality of such Content. You understand that by using the Site you may be exposed to Content that is offensive, indecent or objectionable.
+
+As a condition of use, you promise not to use the Services for any purpose that is unlawful or prohibited by these Terms, or any other purpose not reasonably intended by 500px. By way of example, and not as a limitation, you agree not to use the Services:
+
+To abuse, harass, threaten, impersonate or intimidate any person;
+To post or transmit, or cause to be posted or transmitted, any Content that is libellous, defamatory, obscene, pornographic, abusive, offensive, profane, or that infringes any copyright or other right of any person;
+For any purpose (including posting or viewing Content) that is not permitted under the laws of the jurisdiction where you use the Services;
+To post or transmit, or cause to be posted or transmitted, any communication or solicitation designed or intended to obtain password, account, or private information from any 500px user;
+To create or transmit unwanted ‘spam’ to any person or any URL
+To create multiple accounts for the purpose of voting for or against users’ photographs or images;
+To post copyrighted Content which doesn’t belong to you, with exception of Blogs, where you may post such Content with explicit mention of the author’s name and a link to the source of the Content;
+With the exception of accessing RSS feeds, you will not use any robot, spider, scraper or other automated means to access the Site for any purpose without our express written permission. Additionally, you agree that you will not: (i) take any action that imposes, or may impose in our sole discretion an unreasonable or disproportionately large load on our infrastructure; (ii) interfere or attempt to interfere with the proper working of the Site or any activities conducted on the Site; or (iii) bypass any measures we may use to prevent or restrict access to the Site;
+To artificially inﬂate or alter vote counts, blog counts, comments, or any other Service or for the purpose of giving or receiving money or other compensation in exchange for votes, or for participating in any other organized effort that in any way artificially alters the results of Services;
+To advertise to, or solicit, any user to buy or sell any products or services, or to use any information obtained from the Services in order to contact, advertise to, solicit, or sell to any user without their prior explicit consent;
+To promote or sell Content of another person
+To sell or otherwise transfer your profile.
+To report a suspected abuse of the Site or a breach of the Terms (other than relating to copyright infringement which is addressed under “COPYRIGHT COMPLAINTS” below) please send written notice to 500px at email: help@500px.com.
+
+You are solely responsible for your interactions with other users of the Site. 500px reserves the right, but has no obligation, to monitor disputes between you and other users.
+
+Basically,
+You cannot use our site to post pornographic material, harass people, send spam, negatively vote on all photos, and do other crazy stuff. Be reasonable and responsible, don't do anything stupid and you'll be fine.
+
+Content Submitted Or Made Available For Inclusion On The Service
+
+Please read this section carefully before posting, uploading, or otherwise submitting any Content to the site. By submitting content to the site you are granting 500px a worldwide, Non exclusive license to use the content and are representing and warranting to 500px That the content is owned or duly licensed by you, and that 500px is free to publish, Distribute and use the content as hereinafter provided for without obtaining permission Or license from any third party.
+
+In consideration of 500px’s agreement to allow you to post Content to the Site and 500px’s agreement to publish such Content and for other valuable consideration the receipt and sufficiency of which are hereby expressly and irrevocably acknowledged, you agree with 500px as follows:
+
+You acknowledge that:
+By uploading your photographic or graphic works to 500px you retain full rights to those works that you had prior to uploading.
+By posting Content to the Site you hereby grant to 500px a non-exclusive, transferable, fully paid, worldwide license (with the right to sublicense) to use, distribute, reproduce, modify, adapt, publicly perform and publicly display such Content in connection with the Services. This license will exist for the period during which the Content is posted on the Site and will automatically terminate upon the removal of the Content from the Site;
+The license granted to 500px includes the right to use your Content fully or partially for promotional reasons and to distribute and redistribute your Content to other parties, web-sites, applications, and other entities, provided such Content is attributed to you in accordance with the credits (i.e. username, profile picture, photo title, descriptions, tags, and other accompanying information) if any and as appropriate, all as submitted to 500px by you;
+500px uses industry recognized software and measures to restrict the ability of users and visitors to the Site to make high resolution copies of Content posted on the Site. Notwithstanding this, 500px makes no representation and warranty that Content posted on the Site will not be unlawfully copied without your consent. 500px does not restrict the ability of users and visitors to the Site to make low resolution or ‘thumbnail’ copies of Content posted on the Site and you hereby expressly authorize 500px to permit users and visitors to the Site to make such low resolution copies of your Content; and
+Subject to the terms of the foregoing license, you retain full ownership or other rights in your Content and any intellectual property rights or other proprietary rights associated with your Content.
+You represent and warrant that:
+You are the owner of all rights, including all copy rights in and to all Content you submit to the site;
+You have the full and complete right to enter into this agreement and to grant to 500px the rights in the Content herein granted, and that no further permissions are required from, nor payments required to be made to any other person in connection with the use by 500px of the Content as contemplated herein; and
+The Content does not defame any person and does not infringe upon the copyright, moral rights, publicity rights, privacy rights or any other right of any person, or violate any law or judicial or governmental order.
+You shall not have any right to terminate the permissions granted herein, nor to seek, obtain, or enforce any injunctive or other equitable relief against 500px, all of which such rights are hereby expressly and irrevocably waived by you in favour of 500px.
+Basically,
+Your photos will preserve whatever copyright they had before uploading to this site. We will protect the copyright and will not sell your photos without your permission.
+
+Premium Services
+
+500px provides premium services to holders of its 'Plus' or ‘Awesome’ ("premium") accounts. In addition to the general terms and conditions provided for by these Terms, the following terms and conditions apply specifically to premium account holders:
+
+Services available to premium account holders are described on the account Upgrade page. Any feature that is not described on the account Upgrade page cannot be grounds for refund of an Awesome account.
+500px may modify, suspend or discontinue Services provided to premium account holders at any time at its sole discretion and without prior notice.
+500px provides new premium account holders with a 14 day trial period and will provide a full refund if you choose to terminate your Awesome account within this period. If you choose to terminate your Awesome account after the 14 day trial period you will be responsible for paying your Awesome account fee up to and including the Termination Date.
+Any refund owing to you will be paid within 30 days of the Termination Date provided your request for termination included your username and full name as it appears in your PayPal account or on your credit card.
+Basically,
+We offer free 14 day no-obligation trial to try all the features of Awesome and Plus accounts. Refunds apply only to services described on upgrade page. This does not include third-party offerings such as Adobe products, which are non-refundable.
+
+Fair Usage Policy
+
+500px maintains a fair usage policy to ensure stable and fast service to all users.
+
+Free accounts are limited to a maximum of 20 new photographs/images per week and 2,000 photographs/images in total (approximately 60Gb of storage) and 1Gb of data transfer from profile and portfolios per month. Any additional usage may result in restrictions on your account including limited access to your portfolio or a requirement to upgrade if the limit is exceeded for several months.
+
+Premium accounts are limited to maximum of 1,000 new photographs/images per week 100,000 photographs/ images in total (approximately 3,000Gb of storage) and 10Gb of data transfer per month. Awesome accounts that exceed a limit for several months will be notified of their usage and restrictions may be imposed if usage is not corrected.
+
+Basically,
+If you use more than your fair share, we may gradually limit your account.
+
+Store
+
+If you choose to register to use the 500px Store (the “Store”) the following terms and conditions apply in addition to the general Terms. Throughout these Terms, a reference to the ‘purchase’ or ‘sale’(or similar words) of Store Images (as defined below) means the purchase or sale of a Customer License (as defined below) to use a Store Image.
+
+About the Store
+
+The Store is a Service provided by 500px that allows users to post photos and images for sale to the public. Photos and images are sold by 500px pursuant to the license granted to 500px below. To use the Store you must be at least 18 years of age and have a valid 500px account. By uploading any photos or images to the Store (collectively your “Store Images”) you make the following additional representations and warranties to 500px:
+
+You can lawfully enter into contracts under applicable law and you are at least 18 years old.
+You hereby irrevocably waive all moral rights in your Store Images; and
+You have obtained and have copies of model releases from all subjects depicted in your Store Images, and such persons voluntarily consented to publication and/or dissemination of their likeness for all legal purposes. Upon our request you will provide a copy of the model release from any subject depicted in your Store Images to 500px.
+Use of the Content and Grant of License
+
+500px will use your Store Images for the purpose licensing your Store Images to customers of the Store (“Customers”) in such formats as we may, from time to time make available to Customers, including without limiting the generality of the foregoing, via electronic download and print. In connection with the foregoing, in addition to the licenses you grant to 500px elsewhere in these Terms, you grant to 500px a non-exclusive, transferable, fully paid, worldwide license (with the right to sublicense) to use, publish, copy, publicly perform, publicly display, reformat, translate, excerpt (in whole or in part) and distribute copies of your Store Images (the “Store License”).
+
+The Store License includes the right for 500px to use screen resolution images and thumbnails of your Store Images for display and promotional purposes on the 500px Site, the Store, third party sites, and in connection with internet search results, and embeddable codes. Screen resolution images will be accompanied by your credits.
+
+Your Store Images will be licensed to Customers by 500px in accordance with the 500px Customer License in effect at the time the Customer purchases your Store Image. The 500px Customer License is available at: 500px.com/terms/download_license.pdf.
+
+Removal of Store Images
+
+At any time you can remove your Store Images from the Store automatically using the Store settings. In addition, 500px may remove any Store Images that it believes to be in breach of the Terms. In all cases copies of your Store Images posted on any third party sites and used for promotional purposes shall be removed within a reasonable period of time following your removal request, however submitted. Except as otherwise provided for herein, the Store License will exist for the period during which a Store Image is posted on the Store and will automatically terminate upon the removal of the Store Image from the Store. Notwithstanding the foregoing, the Store License will continue in respect of any Store Images which were purchased by Customers prior to their removal of the Store until fulfillment of such purchase requests.
+
+Subject to the licenses granted to 500px in these Terms you retain ownership of your Store Images.
+
+Payment of Fees upon Sale of Store Images
+
+You will be paid fees (“Fees”) for the sale of Store Images in accordance with the 500px fee schedule in effect at the time a Customer purchases a Store Image. 500px reserves the right to change the fee schedule from time to time and at any time at its sole discretion. We will notify you of changes to the fee schedule by posting an announcement on the Site. You shall be responsible for reviewing any such changes. Your continued use of the Store, including the continued posting of your Store Images in the Store after a change in fees will signify your acceptance of the revised fee schedule. The fee schedule is available at: 500px.com/terms/fee_schedule.pdf.
+
+In addition to the foregoing, the following terms and conditions shall apply to payment of Fees to you for your Store Images sold through the Store:
+
+The purchase and sale of your Store Images will be deemed to be complete 45 days after payment is received by 500px from the Customer.
+Fees shall not be paid in respect of any Store Image that is returned by the Customer for exchange or refund.
+Payment will be processed via PayPal as indicated in your 500px account or by cheque mailed to an address designated by you in your 500px account.
+If you choose payment by cheque 500px will deduct a processing fee of $10 USD from the amount owing to you.
+500px may deduct or withhold from any amount owing to you any withholding taxes, or other levies as required by applicable law. [The 500px sales report will include all such deductions and withholdings.] You are otherwise responsible for paying all taxes, etc. payable in respect of the Fees paid to you.
+500px shall not be obligated to pay any Fees in respect of Store Images that are used in the Store, the Site, third party sites, or in other locations for promotional purposes.
+
+Termination
+
+You may terminate your Store account at any time in your sole discretion. 500px may terminate your store account at any time for any reason or no reason. All Store Images remaining in your Store account will be removed by 500px upon termination of your store account.
+
+Basically,
+If you are using the Market to sell your photos for profit, you give us permission to deliver downloads. Your photos will be kept safe.
+
+Copyright Complaints
+
+500px respects the intellectual property rights of others. It is our policy to respond promptly any claim that Content posted on the Site infringes the copyright or other intellectual property infringement (“Infringement”) of any person. 500px will use reasonable efforts to investigate notices of alleged Infringement and will take appropriate action under applicable intellectual property law and these Terms where it believes an Infringement has taken place, including removing or disabling access to the Content claimed to be infringing and/or terminating accounts and access to the Site.
+
+To notify 500px of a possible Infringement you must submit your notice in writing to the attention of “Copyright Infringement” care of help@500px.com and include in your notice a detailed description of the alleged Infringement sufficient to enable 500px to make a reasonable determination. Please note that you may be held accountable for damages (including costs and attorneys’ fees) for misrepresenting that any Content is infringing your copyright.
+
+If we remove or disable access to Content in response to a notice of Infringement, we will make reasonable attempts to contact the user who posted the affected Content. If you feel that your Content is not infringing, you may provide 500px with a counter notice in writing to the attention of “Copyright Infringement Counter Notification” at help@500px.com. You must include in your counter notice sufficient information to enable 500px to make a reasonable determination. Please note that you may be held accountable for damages (including costs and attorneys' fees) if you materially misrepresent that your Content is not infringing the copyrights of others.
+
+If you are uncertain whether an activity constitutes Infringement, we recommended seeking advice of an attorney.
+
+Basically,
+We respect copyright. If anything is wrong, please send an email with all the details to help@500px.com.
+
+Links
+
+The Services may provide, or third parties may provide, links to other World Wide Web sites or resources. Because 500px has no control over such sites and resources, you acknowledge and agree that 500px is not responsible for the availability of such external sites or resources, and does not endorse and is not responsible or liable for any content, advertising, products or other materials on or available from such sites or resources. You further acknowledge and agree that 500px shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such site or resource.
+
+Basically,
+Some people may post links, we are not responsible for those links.
+
+Release And Indemnity
+
+You hereby expressly and irrevocably release and forever discharge 500px, its affiliated and associated companies, and their respective directors, officers, employees, agents, representatives, independent and dependent contractors, licensees, successors and assigns of and from any and all actions, causes of action, suits, proceedings, liability, debts, judgments, claims and demands whatsoever in law or equity which you ever had, now have, or hereafter can, shall or may have, for or by reason of, or arising directly or indirectly out of your use of the Site and the Services.
+
+You hereby agree to indemnify and hold harmless 500px, its affiliated and associated companies, and their respective directors, officers, employees, agents, representatives, independent and dependent contractors, licensees, successors and assigns from and against all claims, losses, expenses, damages and costs (including, but not limited to, direct, incidental, consequential, exemplary and indirect damages), and reasonable attorneys' fees, resulting from or arising out of (i) a breach of these Terms, (ii) Content posted on the Site, (iii) the use of the Services, by you or any person using your account or 500px Username and password, (iv) the sale or use of your Store Images, or (v) any violation of any rights of a third party.
+
+Basically,
+We are not liable if something goes really wrong. Always have a backup of your photos.
+
+Limitation Of Liability
+
+In no event shall 500px be liable under contract, tort, strict liability, negligence or other Legal theory with respect to the site, the service or any content (i) for any lost profits or Special, indirect, incidental, punitive, or consequential damages of any kind whatsoever, (ii)
+
+To provide substitute goods or services (however arising), or (iii) for any direct damages in Excess of (in the aggregate) $100.
+
+Basically,
+Again, we are not liable. But we may pay you $100 if our server flies into your window.
+
+Trademarks
+
+500px, 500px.com and other 500px graphics, logos, designs, page headers, button icons, scripts, and service names are registered trademarks, trademarks or trade dress of 500px. 500px’s trademarks and trade dress may not be used in connection with any product or service without the prior written consent of 500px. The images and icons available in the 500px icon pack may used by partners and third party sites in connection with providing appropriate links to the 500px Site.
+
+Basically,
+Please respect our trademarks and brands.
+
+Termination
+
+500px may terminate or suspend any and all Services and/or your 500px account immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms. Upon termination of your account, your right to use the Services will immediately cease. If you wish to terminate your 500px account, you may simply discontinue using the Services. All provisions of the Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability.
+
+It is your responsibility to remove all Content from your account prior to termination. Upon termination of your account 500px will automatically remove all Content posted to your account.
+
+Basically,
+We may stop providing services at any time. You can stop using your account or close it at any time as well.
+
+Change
+
+500px reserves the right, at its sole discretion, to modify or replace the terms at any time. If the alterations constitute a material change to the terms, 500px will notify you by posting an announcement on the site. What constitutes a material change will be determined at 500px’s sole discretion. You shall be responsible for reviewing and becoming familiar with any such modifications. Using any service or viewing any content following notification of a material change to the terms shall constitute your acceptance of the Terms as modified.
+
+Basically,
+If these terms of use change, we will notify you.
+
+Miscellaneous
+
+No agency, partnership, joint venture, or employment is created as a result of the Terms and you do not have any authority of any kind to bind 500px in any respect whatsoever. The failure of either party to exercise in any respect any right provided for herein shall not be deemed a waiver of any further rights hereunder. 500px shall not be liable for any failure to perform its obligations hereunder where such failure results from any cause beyond 500px’s reasonable control, including, without limitation, mechanical, electronic or communications failure or degradation (including "line-noise" interference). If any provision of the Terms is found to be unenforceable or invalid, that provision shall be limited or eliminated to the minimum extent necessary so that the Terms shall otherwise remain in full force and effect and enforceable. 500px may transfer, assign or delegate the Terms and its rights and obligations without consent. The Terms shall be governed by and construed in accordance with the laws of Ontario, as if made within Ontario between two residents thereof, and the parties submit to the exclusive jurisdiction of Ontario courts. Both parties agree that the Terms is the complete and exclusive statement of the mutual understanding of the parties and supersedes and cancels all previous written and oral agreements, communications and other understandings relating to the subject matter of the Terms, and that all modifications must be in a writing signed by both parties, except as otherwise provided herein.
+
+Basically,
+Things can happen — we are not responsible.   CREATIVE COMMONS LICENSE    CREATIVE COMMONS CORPORATION IS NOT A LAW FIRM AND DOES NOT PROVIDE LEGAL SERVICES. DISTRIBUTION OF THIS LICENSE DOES NOT CREATE AN ATTORNEY-CLIENT RELATIONSHIP. CREATIVE COMMONS PROVIDES THIS INFORMATION ON AN "AS-IS" BASIS. CREATIVE COMMONS MAKES NO WARRANTIES REGARDING THE INFORMATION PROVIDED, AND DISCLAIMS LIABILITY FOR DAMAGES RESULTING FROM ITS USE.
+License
+
+THE WORK (AS DEFINED BELOW) IS PROVIDED UNDER THE TERMS OF THIS CREATIVE COMMONS PUBLIC LICENSE ("CCPL" OR "LICENSE"). THE WORK IS PROTECTED BY COPYRIGHT AND/OR OTHER APPLICABLE LAW. ANY USE OF THE WORK OTHER THAN AS AUTHORIZED UNDER THIS LICENSE OR COPYRIGHT LAW IS PROHIBITED.
+
+BY EXERCISING ANY RIGHTS TO THE WORK PROVIDED HERE, YOU ACCEPT AND AGREE TO BE BOUND BY THE TERMS OF THIS LICENSE. TO THE EXTENT THIS LICENSE MAY BE CONSIDERED TO BE A CONTRACT, THE LICENSOR GRANTS YOU THE RIGHTS CONTAINED HERE IN CONSIDERATION OF YOUR ACCEPTANCE OF SUCH TERMS AND CONDITIONS.
+
+1. Definitions
+
+"Adaptation" means a work based upon the Work, or upon the Work and other pre-existing works, such as a translation, adaptation, derivative work, arrangement of music or other alterations of a literary or artistic work, or phonogram or performance and includes cinematographic adaptations or any other form in which the Work may be recast, transformed, or adapted including in any form recognizably derived from the original, except that a work that constitutes a Collection will not be considered an Adaptation for the purpose of this License. For the avoidance of doubt, where the Work is a musical work, performance or phonogram, the synchronization of the Work in timed-relation with a moving image ("synching") will be considered an Adaptation for the purpose of this License.
+"Collection" means a collection of literary or artistic works, such as encyclopedias and anthologies, or performances, phonograms or broadcasts, or other works or subject matter other than works listed in Section 1(f) below, which, by reason of the selection and arrangement of their contents, constitute intellectual creations, in which the Work is included in its entirety in unmodified form along with one or more other contributions, each constituting separate and independent works in themselves, which together are assembled into a collective whole. A work that constitutes a Collection will not be considered an Adaptation (as defined above) for the purposes of this License.
+"Distribute" means to make available to the public the original and copies of the Work or Adaptation, as appropriate, through sale or other transfer of ownership.
+"Licensor" means the individual, individuals, entity or entities that offer(s) the Work under the terms of this License.
+"Original Author" means, in the case of a literary or artistic work, the individual, individuals, entity or entities who created the Work or if no individual or entity can be identified, the publisher; and in addition (i) in the case of a performance the actors, singers, musicians, dancers, and other persons who act, sing, deliver, declaim, play in, interpret or otherwise perform literary or artistic works or expressions of folklore; (ii) in the case of a phonogram the producer being the person or legal entity who first fixes the sounds of a performance or other sounds; and, (iii) in the case of broadcasts, the organization that transmits the broadcast.
+"Work" means the literary and/or artistic work offered under the terms of this License including without limitation any production in the literary, scientific and artistic domain, whatever may be the mode or form of its expression including digital form, such as a book, pamphlet and other writing; a lecture, address, sermon or other work of the same nature; a dramatic or dramatico-musical work; a choreographic work or entertainment in dumb show; a musical composition with or without words; a cinematographic work to which are assimilated works expressed by a process analogous to cinematography; a work of drawing, painting, architecture, sculpture, engraving or lithography; a photographic work to which are assimilated works expressed by a process analogous to photography; a work of applied art; an illustration, map, plan, sketch or three-dimensional work relative to geography, topography, architecture or science; a performance; a broadcast; a phonogram; a compilation of data to the extent it is protected as a copyrightable work; or a work performed by a variety or circus performer to the extent it is not otherwise considered a literary or artistic work.
+"You" means an individual or entity exercising rights under this License who has not previously violated the terms of this License with respect to the Work, or who has received express permission from the Licensor to exercise rights under this License despite a previous violation.
+"Publicly Perform" means to perform public recitations of the Work and to communicate to the public those public recitations, by any means or process, including by wire or wireless means or public digital performances; to make available to the public Works in such a way that members of the public may access these Works from a place and at a place individually chosen by them; to perform the Work to the public by any means or process and the communication to the public of the performances of the Work, including by public digital performance; to broadcast and rebroadcast the Work by any means including signs, sounds or images.
+"Reproduce" means to make copies of the Work by any means including without limitation by sound or visual recordings and the right of fixation and reproducing fixations of the Work, including storage of a protected performance or phonogram in digital form or other electronic medium.
+2. Fair Dealing Rights. Nothing in this License is intended to reduce, limit, or restrict any uses free from copyright or rights arising from limitations or exceptions that are provided for in connection with the copyright protection under copyright law or other applicable laws.
+
+3. License Grant. Subject to the terms and conditions of this License, Licensor hereby grants You a worldwide, royalty-free, non-exclusive, perpetual (for the duration of the applicable copyright) license to exercise the rights in the Work as stated below:
+
+to Reproduce the Work, to incorporate the Work into one or more Collections, and to Reproduce the Work as incorporated in the Collections;
+to create and Reproduce Adaptations provided that any such Adaptation, including any translation in any medium, takes reasonable steps to clearly label, demarcate or otherwise identify that changes were made to the original Work. For example, a translation could be marked "The original work was translated from English to Spanish," or a modification could indicate "The original work has been modified.";
+to Distribute and Publicly Perform the Work including as incorporated in Collections; and,
+to Distribute and Publicly Perform Adaptations.
+The above rights may be exercised in all media and formats whether now known or hereafter devised. The above rights include the right to make such modifications as are technically necessary to exercise the rights in other media and formats. Subject to Section 8(f), all rights not expressly granted by Licensor are hereby reserved, including but not limited to the rights set forth in Section 4(d).
+
+4. Restrictions. The license granted in Section 3 above is expressly made subject to and limited by the following restrictions:
+
+You may Distribute or Publicly Perform the Work only under the terms of this License. You must include a copy of, or the Uniform Resource Identifier (URI) for, this License with every copy of the Work You Distribute or Publicly Perform. You may not offer or impose any terms on the Work that restrict the terms of this License or the ability of the recipient of the Work to exercise the rights granted to that recipient under the terms of the License. You may not sublicense the Work. You must keep intact all notices that refer to this License and to the disclaimer of warranties with every copy of the Work You Distribute or Publicly Perform. When You Distribute or Publicly Perform the Work, You may not impose any effective technological measures on the Work that restrict the ability of a recipient of the Work from You to exercise the rights granted to that recipient under the terms of the License. This Section 4(a) applies to the Work as incorporated in a Collection, but this does not require the Collection apart from the Work itself to be made subject to the terms of this License. If You create a Collection, upon notice from any Licensor You must, to the extent practicable, remove from the Collection any credit as required by Section 4(c), as requested. If You create an Adaptation, upon notice from any Licensor You must, to the extent practicable, remove from the Adaptation any credit as required by Section 4(c), as requested.
+You may not exercise any of the rights granted to You in Section 3 above in any manner that is primarily intended for or directed toward commercial advantage or private monetary compensation. The exchange of the Work for other copyrighted works by means of digital file-sharing or otherwise shall not be considered to be intended for or directed toward commercial advantage or private monetary compensation, provided there is no payment of any monetary compensation in connection with the exchange of copyrighted works.
+If You Distribute, or Publicly Perform the Work or any Adaptations or Collections, You must, unless a request has been made pursuant to Section 4(a), keep intact all copyright notices for the Work and provide, reasonable to the medium or means You are utilizing: (i) the name of the Original Author (or pseudonym, if applicable) if supplied, and/or if the Original Author and/or Licensor designate another party or parties (e.g., a sponsor institute, publishing entity, journal) for attribution ("Attribution Parties") in Licensor's copyright notice, terms of service or by other reasonable means, the name of such party or parties; (ii) the title of the Work if supplied; (iii) to the extent reasonably practicable, the URI, if any, that Licensor specifies to be associated with the Work, unless such URI does not refer to the copyright notice or licensing information for the Work; and, (iv) consistent with Section 3(b), in the case of an Adaptation, a credit identifying the use of the Work in the Adaptation (e.g., "French translation of the Work by Original Author," or "Screenplay based on original Work by Original Author"). The credit required by this Section 4(c) may be implemented in any reasonable manner; provided, however, that in the case of a Adaptation or Collection, at a minimum such credit will appear, if a credit for all contributing authors of the Adaptation or Collection appears, then as part of these credits and in a manner at least as prominent as the credits for the other contributing authors. For the avoidance of doubt, You may only use the credit required by this Section for the purpose of attribution in the manner set out above and, by exercising Your rights under this License, You may not implicitly or explicitly assert or imply any connection with, sponsorship or endorsement by the Original Author, Licensor and/or Attribution Parties, as appropriate, of You or Your use of the Work, without the separate, express prior written permission of the Original Author, Licensor and/or Attribution Parties.
+For the avoidance of doubt:
+
+Non-waivable Compulsory License Schemes. In those jurisdictions in which the right to collect royalties through any statutory or compulsory licensing scheme cannot be waived, the Licensor reserves the exclusive right to collect such royalties for any exercise by You of the rights granted under this License;
+Waivable Compulsory License Schemes. In those jurisdictions in which the right to collect royalties through any statutory or compulsory licensing scheme can be waived, the Licensor reserves the exclusive right to collect such royalties for any exercise by You of the rights granted under this License if Your exercise of such rights is for a purpose or use which is otherwise than noncommercial as permitted under Section 4(b) and otherwise waives the right to collect royalties through any statutory or compulsory licensing scheme; and,
+Voluntary License Schemes. The Licensor reserves the right to collect royalties, whether individually or, in the event that the Licensor is a member of a collecting society that administers voluntary licensing schemes, via that society, from any exercise by You of the rights granted under this License that is for a purpose or use which is otherwise than noncommercial as permitted under Section 4(c).
+Except as otherwise agreed in writing by the Licensor or as may be otherwise permitted by applicable law, if You Reproduce, Distribute or Publicly Perform the Work either by itself or as part of any Adaptations or Collections, You must not distort, mutilate, modify or take other derogatory action in relation to the Work which would be prejudicial to the Original Author's honor or reputation. Licensor agrees that in those jurisdictions (e.g. Japan), in which any exercise of the right granted in Section 3(b) of this License (the right to make Adaptations) would be deemed to be a distortion, mutilation, modification or other derogatory action prejudicial to the Original Author's honor and reputation, the Licensor will waive or not assert, as appropriate, this Section, to the fullest extent permitted by the applicable national law, to enable You to reasonably exercise Your right under Section 3(b) of this License (right to make Adaptations) but not otherwise.
+5. Representations, Warranties and Disclaimer
+
+UNLESS OTHERWISE MUTUALLY AGREED TO BY THE PARTIES IN WRITING, LICENSOR OFFERS THE WORK AS-IS AND MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND CONCERNING THE WORK, EXPRESS, IMPLIED, STATUTORY OR OTHERWISE, INCLUDING, WITHOUT LIMITATION, WARRANTIES OF TITLE, MERCHANTIBILITY, FITNESS FOR A PARTICULAR PURPOSE, NONINFRINGEMENT, OR THE ABSENCE OF LATENT OR OTHER DEFECTS, ACCURACY, OR THE PRESENCE OF ABSENCE OF ERRORS, WHETHER OR NOT DISCOVERABLE. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES, SO SUCH EXCLUSION MAY NOT APPLY TO YOU.
+
+6. Limitation on Liability. EXCEPT TO THE EXTENT REQUIRED BY APPLICABLE LAW, IN NO EVENT WILL LICENSOR BE LIABLE TO YOU ON ANY LEGAL THEORY FOR ANY SPECIAL, INCIDENTAL, CONSEQUENTIAL, PUNITIVE OR EXEMPLARY DAMAGES ARISING OUT OF THIS LICENSE OR THE USE OF THE WORK, EVEN IF LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+7. Termination
+
+This License and the rights granted hereunder will terminate automatically upon any breach by You of the terms of this License. Individuals or entities who have received Adaptations or Collections from You under this License, however, will not have their licenses terminated provided such individuals or entities remain in full compliance with those licenses. Sections 1, 2, 5, 6, 7, and 8 will survive any termination of this License.
+Subject to the above terms and conditions, the license granted here is perpetual (for the duration of the applicable copyright in the Work). Notwithstanding the above, Licensor reserves the right to release the Work under different license terms or to stop distributing the Work at any time; provided, however that any such election will not serve to withdraw this License (or any other license that has been, or is required to be, granted under the terms of this License), and this License will continue in full force and effect unless terminated as stated above.
+8. Miscellaneous
+
+Each time You Distribute or Publicly Perform the Work or a Collection, the Licensor offers to the recipient a license to the Work on the same terms and conditions as the license granted to You under this License.
+Each time You Distribute or Publicly Perform an Adaptation, Licensor offers to the recipient a license to the original Work on the same terms and conditions as the license granted to You under this License.
+If any provision of this License is invalid or unenforceable under applicable law, it shall not affect the validity or enforceability of the remainder of the terms of this License, and without further action by the parties to this agreement, such provision shall be reformed to the minimum extent necessary to make such provision valid and enforceable.
+No term or provision of this License shall be deemed waived and no breach consented to unless such waiver or consent shall be in writing and signed by the party to be charged with such waiver or consent.
+This License constitutes the entire agreement between the parties with respect to the Work licensed here. There are no understandings, agreements or representations with respect to the Work not specified here. Licensor shall not be bound by any additional provisions that may appear in any communication from You. This License may not be modified without the mutual written agreement of the Licensor and You.
+The rights granted under, and the subject matter referenced, in this License were drafted utilizing the terminology of the Berne Convention for the Protection of Literary and Artistic Works (as amended on September 28, 1979), the Rome Convention of 1961, the WIPO Copyright Treaty of 1996, the WIPO Performances and Phonograms Treaty of 1996 and the Universal Copyright Convention (as revised on July 24, 1971). These rights and subject matter take effect in the relevant jurisdiction in which the License terms are sought to be enforced according to the corresponding provisions of the implementation of those treaty provisions in the applicable national law. If the standard suite of rights granted under applicable copyright law includes additional rights not granted under this License, such additional rights are deemed to be included in the License; this License is not intended to restrict the license of any rights under applicable law.
+Creative Commons Notice
+
+Creative Commons is not a party to this License, and makes no warranty whatsoever in connection with the Work. Creative Commons will not be liable to You or any party on any legal theory for any damages whatsoever, including without limitation any general, special, incidental or consequential damages arising in connection to this license. Notwithstanding the foregoing two (2) sentences, if Creative Commons has expressly identified itself as the Licensor hereunder, it shall have all rights and obligations of Licensor.
+
+Except for the limited purpose of indicating to the public that the Work is licensed under the CCPL, Creative Commons does not authorize the use by either party of the trademark "Creative Commons" or any related trademark or logo of Creative Commons without the prior written consent of Creative Commons. Any permitted use will be in compliance with Creative Commons' then-current trademark usage guidelines, as may be published on its website or otherwise made available upon request from time to time. For the avoidance of doubt, this trademark restriction does not form part of the License.
+
+Creative Commons may be contacted at https://creativecommons.org/.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="uhr-PA-gyy">
+                                <rect key="frame" x="20" y="108" width="560" height="189"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="189" id="Zbv-pj-rkZ"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MhL-CD-soo">
+                                <rect key="frame" x="20" y="305" width="560" height="275"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wW1-IK-sgi" firstAttribute="top" secondItem="uhr-PA-gyy" secondAttribute="bottom" constant="8" id="1wN-Yk-vL7"/>
+                            <constraint firstItem="uhr-PA-gyy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="801-2i-H9o"/>
+                            <constraint firstItem="MhL-CD-soo" firstAttribute="top" secondItem="uhr-PA-gyy" secondAttribute="bottom" constant="8" id="8Hj-fE-IQ3"/>
+                            <constraint firstItem="wW1-IK-sgi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="980-mj-cmF"/>
+                            <constraint firstAttribute="trailing" secondItem="uhr-PA-gyy" secondAttribute="trailing" constant="20" id="NKk-1d-Py1"/>
+                            <constraint firstItem="ndg-ya-cNv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="OnM-vh-rJ3"/>
+                            <constraint firstItem="ndg-ya-cNv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="YtN-Fd-Ip5"/>
+                            <constraint firstItem="MhL-CD-soo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="cGX-ah-qiM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wW1-IK-sgi" secondAttribute="bottom" constant="20" id="iIB-co-RtF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MhL-CD-soo" secondAttribute="bottom" constant="20" id="iN2-XG-Gsx"/>
+                            <constraint firstAttribute="trailing" secondItem="MhL-CD-soo" secondAttribute="trailing" constant="20" id="jsd-lF-q8p"/>
+                            <constraint firstItem="uhr-PA-gyy" firstAttribute="top" secondItem="ndg-ya-cNv" secondAttribute="bottom" constant="8" id="nYu-8i-rsq"/>
+                            <constraint firstAttribute="trailing" secondItem="wW1-IK-sgi" secondAttribute="trailing" constant="20" id="tOm-5m-tI5"/>
+                            <constraint firstAttribute="trailing" secondItem="ndg-ya-cNv" secondAttribute="trailing" constant="20" id="tdX-2O-hti"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="XOG-O5-Qs8"/>
+                    <connections>
+                        <outlet property="segmentControl" destination="ndg-ya-cNv" id="ZAH-da-g8E"/>
+                        <outlet property="textfield" destination="wW1-IK-sgi" id="WgG-XQ-Rn8"/>
+                        <outlet property="textfield2" destination="MhL-CD-soo" id="nYq-lJ-UAY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1991" y="167"/>
+        </scene>
+        <!--Slide View Controller-->
+        <scene sceneID="Xrv-F1-bMo">
+            <objects>
+                <viewController storyboardIdentifier="slide" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QZU-Pc-lDz" customClass="SlideViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jwg-zY-2AV"/>
+                        <viewControllerLayoutGuide type="bottom" id="cgb-Xm-49q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3h8-G0-mfp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View pictures from the long list of categories available." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7zH-oJ-bfe">
+                                <rect key="frame" x="20" y="20" width="560" height="119"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="119" id="tgH-cf-kXB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="s1" translatesAutoresizingMaskIntoConstraints="NO" id="W9m-Yw-AB8">
+                                <rect key="frame" x="160" y="147" width="280" height="445"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="BcU-9N-bLf"/>
+                                </constraints>
+                            </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="slg-6W-lea">
+                                <rect key="frame" x="0.0" y="550" width="600" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Lmn-d7-JqH"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvc-s5-E2w">
+                                <rect key="frame" x="546" y="20" width="34" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YdW-2z-iK9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeButtonAction:" destination="QZU-Pc-lDz" eventType="touchUpInside" id="9DK-bZ-i2a"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.25882352939999997" green="0.83529411760000005" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="cgb-Xm-49q" firstAttribute="top" secondItem="slg-6W-lea" secondAttribute="bottom" constant="20" id="0Yk-35-6BK"/>
+                            <constraint firstItem="W9m-Yw-AB8" firstAttribute="top" secondItem="7zH-oJ-bfe" secondAttribute="bottom" constant="8" id="776-vT-sW0"/>
+                            <constraint firstItem="7zH-oJ-bfe" firstAttribute="top" secondItem="Jwg-zY-2AV" secondAttribute="bottom" id="GEa-2x-g0C"/>
+                            <constraint firstItem="slg-6W-lea" firstAttribute="leading" secondItem="3h8-G0-mfp" secondAttribute="leading" id="Gqi-t0-vWC"/>
+                            <constraint firstAttribute="trailing" secondItem="slg-6W-lea" secondAttribute="trailing" id="JNA-PP-BBR"/>
+                            <constraint firstItem="cvc-s5-E2w" firstAttribute="top" secondItem="Jwg-zY-2AV" secondAttribute="bottom" id="Jrr-c7-sII"/>
+                            <constraint firstAttribute="trailing" secondItem="7zH-oJ-bfe" secondAttribute="trailing" constant="20" id="UyF-xV-BXm"/>
+                            <constraint firstItem="W9m-Yw-AB8" firstAttribute="top" secondItem="7zH-oJ-bfe" secondAttribute="bottom" constant="8" id="VIp-Iq-a2t"/>
+                            <constraint firstItem="W9m-Yw-AB8" firstAttribute="leading" secondItem="3h8-G0-mfp" secondAttribute="leading" constant="20" id="cpH-3M-jSh"/>
+                            <constraint firstAttribute="trailing" secondItem="W9m-Yw-AB8" secondAttribute="trailing" constant="20" id="d25-Jy-N5y"/>
+                            <constraint firstItem="W9m-Yw-AB8" firstAttribute="top" secondItem="cvc-s5-E2w" secondAttribute="bottom" constant="97" id="fOu-xl-vag"/>
+                            <constraint firstItem="W9m-Yw-AB8" firstAttribute="top" secondItem="7zH-oJ-bfe" secondAttribute="bottom" constant="8" id="gA8-TT-ZXJ"/>
+                            <constraint firstItem="7zH-oJ-bfe" firstAttribute="leading" secondItem="3h8-G0-mfp" secondAttribute="leading" constant="20" id="k1k-nP-xKg"/>
+                            <constraint firstItem="W9m-Yw-AB8" firstAttribute="centerX" secondItem="3h8-G0-mfp" secondAttribute="centerX" id="oVp-cr-beB"/>
+                            <constraint firstAttribute="trailing" secondItem="cvc-s5-E2w" secondAttribute="trailing" constant="20" id="sqC-LF-dH8"/>
+                            <constraint firstItem="cgb-Xm-49q" firstAttribute="top" secondItem="W9m-Yw-AB8" secondAttribute="bottom" constant="8" id="w0y-6D-dmR"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="776-vT-sW0"/>
+                                <exclude reference="VIp-Iq-a2t"/>
+                                <exclude reference="cpH-3M-jSh"/>
+                                <exclude reference="d25-Jy-N5y"/>
+                                <exclude reference="fOu-xl-vag"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="closebutton" destination="cvc-s5-E2w" id="YLT-Ow-L2X"/>
+                        <outlet property="imageViewSlide" destination="W9m-Yw-AB8" id="6pc-7a-1HS"/>
+                        <outlet property="mytitleLabel" destination="7zH-oJ-bfe" id="eOy-bW-dwI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pj1-Ay-1X7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2689" y="167"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rAq-QW-kyz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GeX-C3-9mL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Pnd-5t-7SH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1Qb-RQ-e6z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ces-Yf-Nda" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1179" y="167"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="499" height="496"/>
+        <image name="s1" width="312" height="390"/>
+    </resources>
+</document>

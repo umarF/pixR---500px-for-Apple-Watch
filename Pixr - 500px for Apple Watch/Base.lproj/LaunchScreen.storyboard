@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pixR - Watch Picture Viewer for 500px" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rP-3N-dfV">
+                                <rect key="frame" x="20" y="367" width="560" height="213"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="213" id="CQi-Rt-jzx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.83536537247474751" blue="0.00025572521676792614" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="3" height="3"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="aQf-zq-YzP">
+                                <rect key="frame" x="20" y="28" width="560" height="269"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="269" id="BUH-lE-vEF"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="aQf-zq-YzP" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="07b-GG-aRh"/>
+                            <constraint firstItem="aQf-zq-YzP" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="20" id="7W6-sG-Uvd"/>
+                            <constraint firstAttribute="trailing" secondItem="2rP-3N-dfV" secondAttribute="trailing" constant="20" id="7e9-Ak-6o7"/>
+                            <constraint firstAttribute="trailing" secondItem="aQf-zq-YzP" secondAttribute="trailing" constant="20" id="7lI-8h-hOH"/>
+                            <constraint firstItem="aQf-zq-YzP" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="8" id="eIh-p8-tzT"/>
+                            <constraint firstItem="2rP-3N-dfV" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="20" id="gAf-Ho-vKx"/>
+                            <constraint firstItem="2rP-3N-dfV" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="lKh-a1-pKD"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="2rP-3N-dfV" secondAttribute="bottom" constant="20" id="rOR-Xj-h6e"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="499" height="496"/>
+    </resources>
+</document>

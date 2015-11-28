@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VOT-dS-mnl">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+        </mutableArray>
+        <mutableArray key="HelveticaNeueExtras.ttc">
+            <string>HelveticaNeue-CondensedBold</string>
+            <string>HelveticaNeue-CondensedBold</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--imageTable-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="imageTable" id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <imageView width="136" height="96" alignment="center" image="loadinglogo" contentMode="center" animationDuration="1" id="d23-S8-oiW">
+                            <variation key="device=watch42mm" width="154"/>
+                        </imageView>
+                        <label width="118" alignment="center" text="Loading..." textAlignment="center" numberOfLines="0" id="LXV-ER-0R5">
+                            <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <table alignment="left" id="NaP-3y-djL">
+                            <items>
+                                <tableRow identifier="myCellRow" id="M7E-Os-f6a" customClass="ImageCellClass">
+                                    <group key="rootItem" width="1" height="132" alignment="left" layout="vertical" id="NCM-tY-JM3">
+                                        <items>
+                                            <imageView width="136" height="123" alignment="center" image="frame.png" contentMode="center" animationDuration="1" id="dno-mt-yWT">
+                                                <variation key="device=watch42mm" width="142"/>
+                                            </imageView>
+                                            <imageView width="136" height="123" alignment="left" hidden="YES" contentMode="scaleAspectFit" id="0x3-ma-eQC"/>
+                                            <separator alignment="center" id="h3N-JK-QF2">
+                                                <color key="color" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </separator>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="myImageView" destination="dno-mt-yWT" id="uXW-pl-eGW"/>
+                                        <outlet property="proxyImageView" destination="0x3-ma-eQC" id="Ddo-OY-wuZ"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <button width="1" alignment="left" title="Show More" id="IXk-tn-Kd1">
+                            <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="showMoreAction" destination="AgC-eL-Hgc" id="8BC-Dk-WaF"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <menu key="menu" id="GrA-nm-QeM">
+                        <items>
+                            <menuItem title="Popular" image="poll.png" id="vpJ-r3-3Hi">
+                                <connections>
+                                    <action selector="popularAction" destination="AgC-eL-Hgc" id="cZk-HN-uJU"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Trending" image="line.png" id="7Hs-nW-I2O">
+                                <connections>
+                                    <action selector="trendingAction" destination="AgC-eL-Hgc" id="F9e-PJ-fSG"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Editor's Choice" image="ball.png" id="CiR-vx-3IL">
+                                <connections>
+                                    <action selector="editorAction" destination="AgC-eL-Hgc" id="Pmd-DQ-OVB"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Fresh" image="new.png" id="xGq-zq-r94">
+                                <connections>
+                                    <action selector="freshAction" destination="AgC-eL-Hgc" id="CIF-la-ONJ"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="loadingLabel" destination="LXV-ER-0R5" id="TAg-Fg-CP0"/>
+                        <outlet property="loadingView" destination="d23-S8-oiW" id="7rB-Mp-zD7"/>
+                        <outlet property="myTable" destination="NaP-3y-djL" id="yGA-LE-JSL"/>
+                        <outlet property="showMore" destination="IXk-tn-Kd1" id="cka-QA-oUZ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="178" y="297.5"/>
+        </scene>
+        <!--mainScreen-->
+        <scene sceneID="s8a-rF-Ab7">
+            <objects>
+                <controller identifier="mainScreen" hidesWhenLoading="NO" id="tr6-7O-V6s" customClass="MenuController">
+                    <items>
+                        <group width="1" height="72" alignment="left" id="Sok-1e-KzX">
+                            <items>
+                                <button width="64" height="80" alignment="left" title="Popular" id="mA7-Tm-Nrj">
+                                    <fontDescription key="font" type="system" pointSize="13"/>
+                                    <connections>
+                                        <action selector="popularButtonAction" destination="tr6-7O-V6s" id="bAD-Kn-gqV"/>
+                                    </connections>
+                                </button>
+                                <button width="64" height="80" alignment="right" title="Trending" id="omB-s3-ocT">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                    <connections>
+                                        <action selector="trendingButtonAction" destination="tr6-7O-V6s" id="ggq-Sc-NwC"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="72" alignment="left" id="MBR-8T-dYG">
+                            <items>
+                                <button width="64" height="80" alignment="left" title="Editor's Choice" id="zKH-er-gdo">
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                    <connections>
+                                        <action selector="editorButtonAction" destination="tr6-7O-V6s" id="unO-9w-rSY"/>
+                                    </connections>
+                                </button>
+                                <button width="64" height="80" alignment="right" title="Fresh" id="p9R-7A-rEq">
+                                    <connections>
+                                        <action selector="freshButtonAction" destination="tr6-7O-V6s" id="JZl-ja-X92"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="editorButton" destination="zKH-er-gdo" id="Udx-gr-m42"/>
+                        <outlet property="freshButton" destination="p9R-7A-rEq" id="s5f-sP-y7K"/>
+                        <outlet property="popularButton" destination="mA7-Tm-Nrj" id="0Vh-s5-CaG"/>
+                        <outlet property="trendingButton" destination="omB-s3-ocT" id="w1y-V5-ejZ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="179" y="613"/>
+        </scene>
+        <!--Main Menu View Controller-->
+        <scene sceneID="FwQ-al-zNJ">
+            <objects>
+                <controller hidesWhenLoading="NO" id="VOT-dS-mnl" customClass="MainMenuViewController">
+                    <items>
+                        <table alignment="left" id="sgp-tp-fns">
+                            <items>
+                                <tableRow identifier="menuCell" id="m52-gD-UlG" customClass="MainMenuCell">
+                                    <group key="rootItem" width="1" alignment="left" id="6aI-2J-xdm">
+                                        <items>
+                                            <separator alignment="left" id="UkQ-sl-i8U">
+                                                <color key="color" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </separator>
+                                            <label width="115" height="31" alignment="left" text="Label" textAlignment="left" id="2cW-19-zR9">
+                                                <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="font" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="15"/>
+                                                <variation key="device=watch38mm">
+                                                    <fontDescription key="font" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="13"/>
+                                                </variation>
+                                                <variation key="device=watch42mm" width="134"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="categoryLabel" destination="2cW-19-zR9" id="nrh-cl-FFt"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="mainMenuTable" destination="sgp-tp-fns" id="1Mm-CD-lQf"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="180.46153846153848" y="835.61538461538464"/>
+        </scene>
+        <!--imageDetails-->
+        <scene sceneID="8Uc-mP-pkE">
+            <objects>
+                <controller identifier="imageDetails" hidesWhenLoading="NO" id="eO5-Ws-tnI" customClass="ImageDetails">
+                    <items>
+                        <group width="1" height="474" alignment="left" layout="vertical" id="Y8Y-Rp-9Ui">
+                            <items>
+                                <label width="136" height="130" alignment="left" text="Image Name" textAlignment="center" numberOfLines="10" id="HOH-TO-oeR">
+                                    <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="11"/>
+                                    <variation key="device=watch42mm" width="151">
+                                        <fontDescription key="font" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="13"/>
+                                    </variation>
+                                </label>
+                                <separator alignment="left" id="hv3-EU-Whm">
+                                    <color key="color" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </separator>
+                                <group width="1" height="60" alignment="left" id="YOZ-ka-7Bh">
+                                    <items>
+                                        <separator alignment="left" id="K51-rQ-NGi">
+                                            <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </separator>
+                                        <separator alignment="left" id="nah-KR-7JQ">
+                                            <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </separator>
+                                        <imageView width="28" height="28" alignment="left" verticalAlignment="center" image="date.png" contentMode="scaleAspectFit" id="nWh-x5-4vZ"/>
+                                        <label width="95" height="60" alignment="left" verticalAlignment="center" text="Date" textAlignment="right" numberOfLines="2" id="Q0z-Gd-t3L">
+                                            <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                            <variation key="device=watch42mm" width="120">
+                                                <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                            </variation>
+                                        </label>
+                                    </items>
+                                    <variation key="default">
+                                        <mask key="items">
+                                            <exclude reference="K51-rQ-NGi"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="device=watch42mm">
+                                        <mask key="items">
+                                            <include reference="K51-rQ-NGi"/>
+                                        </mask>
+                                    </variation>
+                                </group>
+                                <group width="1" alignment="left" id="tpd-tb-5T7">
+                                    <items>
+                                        <separator alignment="left" id="aAi-eQ-Obf">
+                                            <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </separator>
+                                        <separator alignment="left" id="cjf-gq-lX4">
+                                            <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </separator>
+                                        <imageView width="28" height="28" alignment="left" verticalAlignment="center" image="camera.png" contentMode="scaleAspectFit" id="Uy4-7s-8Vz"/>
+                                        <label width="95" height="60" alignment="left" verticalAlignment="center" text="Camera" textAlignment="right" numberOfLines="2" id="awj-RK-k1c">
+                                            <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                            <variation key="device=watch42mm" width="120">
+                                                <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                            </variation>
+                                        </label>
+                                    </items>
+                                    <variation key="default">
+                                        <mask key="items">
+                                            <exclude reference="aAi-eQ-Obf"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="device=watch42mm">
+                                        <mask key="items">
+                                            <include reference="aAi-eQ-Obf"/>
+                                        </mask>
+                                    </variation>
+                                </group>
+                                <group width="1" alignment="left" id="0Cy-vX-ncJ">
+                                    <items>
+                                        <separator alignment="left" id="iEg-7y-0e0">
+                                            <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </separator>
+                                        <separator alignment="left" id="4qL-Rb-QKu">
+                                            <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </separator>
+                                        <imageView width="28" height="28" alignment="left" verticalAlignment="center" image="votes.png" contentMode="scaleAspectFit" id="n0b-cd-wSz"/>
+                                        <label width="95" height="60" alignment="left" verticalAlignment="center" text="Votes" textAlignment="right" id="InN-Gi-Z7w">
+                                            <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                            <variation key="device=watch42mm" width="120">
+                                                <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                            </variation>
+                                        </label>
+                                    </items>
+                                    <variation key="default">
+                                        <mask key="items">
+                                            <exclude reference="iEg-7y-0e0"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="device=watch42mm">
+                                        <mask key="items">
+                                            <include reference="iEg-7y-0e0"/>
+                                        </mask>
+                                    </variation>
+                                </group>
+                                <group width="1" alignment="left" id="oFy-XO-1tA">
+                                    <items>
+                                        <separator alignment="left" id="TKU-5L-nCb">
+                                            <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </separator>
+                                        <separator alignment="left" id="ccL-wm-C9s">
+                                            <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </separator>
+                                        <imageView width="28" height="28" alignment="left" verticalAlignment="center" image="rating.png" contentMode="scaleAspectFit" id="RAp-zO-Ujt"/>
+                                        <label width="95" height="60" alignment="left" verticalAlignment="center" text="Rating" textAlignment="right" id="OYu-ha-uiP">
+                                            <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                            <variation key="device=watch42mm" width="120">
+                                                <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                            </variation>
+                                        </label>
+                                    </items>
+                                    <variation key="default">
+                                        <mask key="items">
+                                            <exclude reference="TKU-5L-nCb"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="device=watch42mm">
+                                        <mask key="items">
+                                            <include reference="TKU-5L-nCb"/>
+                                        </mask>
+                                    </variation>
+                                </group>
+                                <group width="1" alignment="left" id="jfP-yr-Em5">
+                                    <items>
+                                        <separator alignment="left" id="4qV-NM-1jl">
+                                            <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </separator>
+                                        <separator alignment="left" id="IIx-SF-a1k">
+                                            <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </separator>
+                                        <imageView width="28" height="28" alignment="left" verticalAlignment="center" image="views.png" contentMode="scaleAspectFit" id="aDY-DL-Omi"/>
+                                        <label width="95" height="60" alignment="left" verticalAlignment="center" text="Views" textAlignment="right" id="L8o-8K-fea">
+                                            <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                            <variation key="device=watch42mm" width="120">
+                                                <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                            </variation>
+                                        </label>
+                                    </items>
+                                    <variation key="default">
+                                        <mask key="items">
+                                            <exclude reference="4qV-NM-1jl"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="device=watch42mm">
+                                        <mask key="items">
+                                            <include reference="4qV-NM-1jl"/>
+                                        </mask>
+                                    </variation>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="cameraDetail" destination="awj-RK-k1c" id="9Ab-42-5gK"/>
+                        <outlet property="imageDate" destination="Q0z-Gd-t3L" id="wdX-pP-iCB"/>
+                        <outlet property="imageTitle" destination="HOH-TO-oeR" id="zHa-Oz-2ZD"/>
+                        <outlet property="rating" destination="OYu-ha-uiP" id="PzW-rx-bQa"/>
+                        <outlet property="views" destination="L8o-8K-fea" id="Fnv-vE-bmp"/>
+                        <outlet property="votes" destination="InN-Gi-Z7w" id="Vyt-A0-z7i"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="358.30769230769232" y="994.28205128205138"/>
+        </scene>
+        <!--profileDetails-->
+        <scene sceneID="2c3-PW-Nu4">
+            <objects>
+                <controller identifier="profileDetails" hidesWhenLoading="NO" id="wXo-gL-UGO" customClass="ProfileDetails">
+                    <items>
+                        <group width="1" height="260" alignment="left" layout="vertical" radius="0.0" id="AZ3-xK-nOJ">
+                            <items>
+                                <group width="1" alignment="left" backgroundImage="user" contentMode="scaleAspectFit" id="GVg-XD-45R">
+                                    <items>
+                                        <imageView width="134" height="51" alignment="left" image="circle" contentMode="scaleAspectFit" id="5YL-KS-DVl">
+                                            <variation key="device=watch42mm" width="154"/>
+                                        </imageView>
+                                    </items>
+                                </group>
+                                <group width="136" height="58" alignment="left" id="h9n-NV-909">
+                                    <items>
+                                        <separator alignment="left" id="iWf-Rm-Tgb">
+                                            <color key="color" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </separator>
+                                        <label width="129" height="57" alignment="left" numberOfLines="2" id="Y8m-aO-SCe">
+                                            <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            <variation key="device=watch42mm" width="145"/>
+                                        </label>
+                                    </items>
+                                    <variation key="device=watch42mm" width="150"/>
+                                </group>
+                                <group width="150" height="58" alignment="left" id="9ha-Fo-M23">
+                                    <items>
+                                        <separator alignment="left" id="hdx-fy-lCt">
+                                            <color key="color" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </separator>
+                                        <label width="129" height="57" alignment="left" numberOfLines="2" id="WHr-UK-Jco">
+                                            <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            <variation key="device=watch42mm" width="145"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <group width="136" height="58" alignment="left" id="k4n-cY-UUy">
+                                    <items>
+                                        <separator alignment="left" id="2en-ao-UH3">
+                                            <color key="color" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </separator>
+                                        <label width="129" height="57" alignment="left" numberOfLines="2" id="E8r-8b-3U6">
+                                            <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                        </label>
+                                    </items>
+                                    <variation key="device=watch42mm" width="150"/>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="city" destination="E8r-8b-3U6" id="kg3-CI-M4E"/>
+                        <outlet property="fullname" destination="WHr-UK-Jco" id="1Mf-9k-osN"/>
+                        <outlet property="profile" destination="GVg-XD-45R" id="9hf-m6-IqW"/>
+                        <outlet property="userimage" destination="5YL-KS-DVl" id="yz1-aP-4gT"/>
+                        <outlet property="username" destination="Y8m-aO-SCe" id="w1D-QV-PbG"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="531.79487179487182" y="886.1794871794873"/>
+        </scene>
+        <!--technicalDetails-->
+        <scene sceneID="MrT-JG-h2O">
+            <objects>
+                <controller identifier="technicalDetails" hidesWhenLoading="NO" id="Ld8-Ms-9hg" customClass="TechnicalDetails">
+                    <items>
+                        <group width="1" height="394" alignment="left" layout="vertical" id="iZE-4l-iEi">
+                            <items>
+                                <group width="136" height="60" alignment="left" id="WNx-cX-ZNZ">
+                                    <items>
+                                        <separator alignment="left" id="9yY-fF-RFl">
+                                            <color key="color" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </separator>
+                                        <label width="129" height="60" alignment="left" text="Aperture" numberOfLines="2" id="efH-wA-sqQ">
+                                            <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                        </label>
+                                    </items>
+                                    <variation key="device=watch42mm" width="150"/>
+                                </group>
+                                <group width="136" height="60" alignment="left" id="U6c-cK-nyl">
+                                    <items>
+                                        <separator alignment="left" id="i6m-MY-lvg">
+                                            <color key="color" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </separator>
+                                        <label width="129" height="60" alignment="left" text="Focal Length" numberOfLines="2" id="i3a-Aj-3K3">
+                                            <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            <variation key="device=watch42mm" width="145"/>
+                                        </label>
+                                    </items>
+                                    <variation key="device=watch42mm" width="150"/>
+                                </group>
+                                <group width="150" height="60" alignment="left" id="gup-hn-ZEA">
+                                    <items>
+                                        <separator alignment="left" id="e6P-0u-IKO">
+                                            <color key="color" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </separator>
+                                        <label width="129" height="60" alignment="left" text="ISO" numberOfLines="2" id="1Zj-L5-s49">
+                                            <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            <variation key="device=watch42mm" width="145"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <group width="136" height="60" alignment="left" id="agD-7r-50h">
+                                    <items>
+                                        <separator alignment="left" id="MSa-iv-oKQ">
+                                            <color key="color" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </separator>
+                                        <label width="129" height="60" alignment="left" text="Shutter Speed" numberOfLines="2" id="qFP-AK-gUw">
+                                            <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            <variation key="device=watch42mm" width="145"/>
+                                        </label>
+                                    </items>
+                                    <variation key="device=watch42mm" width="150"/>
+                                </group>
+                                <group width="136" height="125" alignment="left" id="1eO-eb-Sca">
+                                    <items>
+                                        <separator alignment="left" id="A8G-RZ-QX4">
+                                            <color key="color" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </separator>
+                                        <label width="129" height="125" alignment="left" text="Lens" textAlignment="left" numberOfLines="6" id="mpU-mv-Zrx">
+                                            <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            <variation key="device=watch42mm" width="145"/>
+                                        </label>
+                                    </items>
+                                    <variation key="device=watch42mm" width="150"/>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="aperture" destination="efH-wA-sqQ" id="Dzs-zy-RVW"/>
+                        <outlet property="focallength" destination="i3a-Aj-3K3" id="xLr-Th-pPR"/>
+                        <outlet property="iso" destination="1Zj-L5-s49" id="j9L-QP-SaK"/>
+                        <outlet property="lens" destination="mpU-mv-Zrx" id="mDE-bh-Hoj"/>
+                        <outlet property="shutter" destination="qFP-AK-gUw" id="aOe-0y-vaO"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="687.84615384615392" y="954.1794871794873"/>
+        </scene>
+        <!--detailImage-->
+        <scene sceneID="iVS-dG-vet">
+            <objects>
+                <controller identifier="detailImage" hidesWhenLoading="NO" id="R0f-6h-mLo" customClass="DetailImageController">
+                    <items>
+                        <imageView alignment="left" contentMode="scaleAspectFit" id="WIs-Qo-aUn"/>
+                    </items>
+                    <connections>
+                        <outlet property="detailImageView" destination="WIs-Qo-aUn" id="9bi-VE-XYb"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="358" y="613"/>
+        </scene>
+    </scenes>
+</document>
